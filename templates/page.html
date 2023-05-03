@@ -1,0 +1,231 @@
+<!--<!DOCTYPE html>
+		I want practice using all of the needed items. 
+		CodePen gave me an ! saying to remove this but 
+		I want to have it in so I am commenting it out for CodePen.
+		freeCodeCamp.com 
+		Responsive Wed Design Projects - Survey/Forms Page - Project 2
+		Codepen.io/bgq007
+
+
+-->
+<html>
+	<!-- Head Area - Place for Meta, Title, Links, and Scripts -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="FCC Responsive Web Projects, Project 2, Survey/Forms Page">
+		<meta name="keywords" content="HTML, CSS, FCC">
+		<meta name="author" content="bgq007">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Some Survey Examples</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='survey.css')}}">
+	</head>
+	<!-- Begin Body - All Display Content -->
+	<body id="main"> <!-- This is just for visial placement, comment out or remove -->
+		
+		<!-- These DIVs could also be SECTIONS if appropriate -->
+		<div id="" class="body-container-full"> <!-- This is just for visial placement, comment out or remove -->
+		
+		<!-- Begin Header - All Display Content -->	
+		<header id="" class=""> <!-- This is just for visial placement, comment out or remove -->
+			<nav> <!-- space but no nav --><div><a href="{{url_for('index')}}">Home</a></div></nav>
+			<div id="" class="header-container-full"> <!-- This is just for visial placement, comment out or remove --> 
+				<div id="bg-img"><!--<im src="http://vancouverweekly.com/wp-content/uploads/2017/01/Womens-March-logo.jpg">--></div>
+				<div id="titlesection"><h1 id="title">U.S. Political Survey</h1>
+					<h2><p id="description"><em>What is America to you?</em></p></h2>
+				</div>
+			</div>
+		</header>
+			
+		<!-- Begin Main - All Display Content -->	
+		<main id="" class=""> <!-- This is just for visial placement, comment out or remove -->
+			<!-- Main Container - these DIVs could also be SECTIONS if appropriate -->
+			<div id="" class="main-container-full"> <!-- This is just for visial placement, comment out or remove -->
+				<div> 
+					
+				</div>
+				
+				<section id="formcontainer">
+				<!--  Flex Container -->
+				<div id="flex-container-1" class="flex-container-full"> <!-- This is just for visial placement, comment out or remove -->
+					
+					<form id="survey-form">
+					<!-- Flex Box 1 -->
+  				<div id="flex-box-1" class="flex-box">
+    				<!--<div class="flex-item image">-->
+								<img class="flex-item image" src="http://horizonssfs.com/wp-content/uploads/2017/06/politics-word-cloud.jpg">
+						<!--</div>-->
+    				<div class="flex-item formsection">
+							<div id="deminfo">
+							<h3>Demographic Information</h3>
+						<div class="data"><label id="name-label" for="firstname">First Name: *</label>
+						<input id="name" type="text" name="firstname" placeholder="First Name" required></div>
+					<div class="data"><label for="lastname">Last Name: *</label>
+						<input id="lastname" type="text" name="lastname" placeholder="Last Name" required></div>
+						<div class="data"><label id="email-label" for="email">Email Address: *</label>
+						<input id="email" type="email" name="email" placeholder="Email Address" required></div>
+							<div class="data"><label id="dropdown-label" for="dropdown">Age Range: * </label>
+							<select id="dropdown" required>
+								<option value="range" disabled selected>Select Your Age Range</option>
+								<option value="young">18-24</option>
+								<option value="middle">25-39</option>
+								<option value="late">40-54</option>
+								<option value="senior">55+</option>
+							</select>
+								</div>
+							<div class="data"><label id="gender-label" for="gender">Gender: *</label>
+						<input id="male-radio" type="radio" name="gender" value="male"> <span style="color:white">Male</span>
+  <input id="female-radio" type="radio" name="gender" value="female"> <span style="color:white">Female</span>
+							<input id="other-radio" type="radio" name="gender" value="other" checked> <span style="color:white">Other</span></div>
+						
+						<div class="data"><label id="ethnicity-label" for="ethnicity">Ethnicity / Race: *  <!--<span style="font-size:x-small">(Check All That Apply)</span>--></label>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+						<input id="native-check" type="checkbox" name="ethnicity1" value="native"> <span style="color:white">Native American</span> <br/>
+											<input id="aa-check" type="checkbox" name="ethnicity3" value="black"> <span style="color:white">African American</span><br/>
+						<input id="pi-check" type="checkbox" name="ethnicity4" value="islander"> <span style="color:white">Pacific Islander</span><br/>
+											</td>
+										<td>
+  <input id="asian-check" type="checkbox" name="ethnicity2" value="asian"> <span style="color:white">Asian</span> <br/>
+											<input id="latino-check" type="checkbox" name="ethnicity5" value="hispanic"> <span style="color:white">Hispanic</span><br/>
+						<input id="white-check" type="checkbox" name="ethnicity6" value="white"> <span style="color:white">White</span><br/>
+										</td>
+										</tr>
+									</tbody>
+								</table>
+							
+						</div>
+						</div>
+						</div>
+  				</div>
+					
+					<!-- Flex Box 2 -->
+  				<div id="flex-box-2" class="flex-box">
+    				<div class="flex-item formsection">
+						<div id="domestic">
+							<h3 class="text-center">Domestic Issues</h3>
+							<div class="data"><label id="ideology-label" for="ideology">Party Affiliation: </label>
+						<input id="dem-radio" type="radio" name="ideology" value="democrat"> Democrat
+  					<input id="ind-radio" type="radio" name="ideology" value="independent"> Independent
+						<input id="rep-radio" type="radio" name="ideology" value="republican"> Republican</div>
+							<div class="data"><label id="number-label" for="donation">Political Campaign donations in 2018?</label>
+								<div class="currency">
+									<span class="usd">$</span><input id="number" type="number" name="donation" placeholder="0" min="0" max="2,500"></div></div>
+							
+							
+							<div class="data"><label id="issues-label" for="issues">What issues matter to you most? <!--<span style="font-size:x-small">(Check All That Apply)</span>--></label>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+						<input id="gun-check" type="checkbox" name="issue1" value="gun"> Gun Control<br/>
+											<input id="net-check" type="checkbox" name="issue2" value="netneutrality"> Net Neutrality<br/>
+						<input id="drug-check" type="checkbox" name="issue3" value="drug"> Drug Policies<br/>
+											<input id="gm-check" type="checkbox" name="issue4" value="gerry"> Redistricting<br/>
+											<input id="hc-check" type="checkbox" name="issue5" value="healthcare"> Health Care<br/>
+						<input id="wage-check" type="checkbox" name="issue6" value="wages"> Wages<br/>
+											</td>
+										<td>
+  <input id="ab-check" type="checkbox" name="issue7" value="abortion"> Abortion<br/>
+											<input id="cc-check" type="checkbox" name="issue8" value="climate"> Climate Change<br/>
+						<input id="tax-check" type="checkbox" name="issue9" value="taxes"> Taxes<br/>
+						<input id="ed-check" type="checkbox" name="issue10" value="education"> Education<br/>
+											<input id="jobs-check" type="checkbox" name="issue11" value="jobs"> Jobs<br/>
+						<input id="im-check" type="checkbox" name="issue12" value="immigration"> Immigration<br/>					
+										</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+						<div><label id="comments-label" for="comments">Comments On Domestic Issues:</label>
+						<textarea name="comments" placeholder="Additional Comments?"></textarea></div>
+							
+						
+						
+						</div>
+						</div>
+								<img class="flex-item image" src="http://www.tandemspring.com/wp-content/uploads/When-It-Comes-To-Social-Justice-In-America-We-Need-Critical-Justice.jpg">
+					
+  				</div>
+					
+					
+					<!-- Flex Box 3 -->
+  				<div id="flex-box-3" class="flex-box">
+								<img class="flex-item image" src="https://nihaiatulislam.files.wordpress.com/2014/12/foreign-policy.png">
+    				<div class="flex-item formsection">
+						<div id="domestic">
+							<h3 class="text-center">Foreign Policy</h3>
+							<div class="data"><label id="role-label" for="role">U.S. International Role: </label>
+						<input id="limited-radio" type="radio" name="role" value="limited"> Limited
+  					<input id="unsure-radio" type="radio" name="role" value="unsure"> Unsure
+						<input id="wide-radio" type="radio" name="role" value="wide"> Wide</div>
+							<div class="data"><label id="number2-label" for="spending">Reasonable Spending Amount?</label>
+								<div class="currency">
+									<span class="usd">%</span><input id="number" type="number" name="donation" placeholder="0" min="0" max="100"></div></div>
+							
+							
+							<div class="data"><label id="issues-label" for="issues">What issues matter to you most? <!--<span style="font-size:x-small">(Check All That Apply)</span>--></label>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+						<input id="terror-check" type="checkbox" name="fp-issue1" value="terrorism"> Terrorism<br/>
+											<input id="muslim-check" type="checkbox" name="fp-issue2" value="muslims"> Muslims<br/>
+						<input id="nato-check" type="checkbox" name="fp-issue3" value="nato"> NATO<br/>
+											<input id="trade-check" type="checkbox" name="fp-issue4" value="trade"> Trade<br/>
+											<input id="nuclear-check" type="checkbox" name="fp-issue5" value="nuclear"> Nuclear Weapons<br/>
+						<input id="russia-check" type="checkbox" name="fp-issue6" value="russia"> Russia<br/>
+											</td>
+										<td>
+  <input id="cyber-check" type="checkbox" name="fp-issue7" value="cyber"> Cyber Security<br/>
+											<input id="cc2-check" type="checkbox" name="fp-issue8" value="climate"> Climate Change<br/>
+						<input id="ms-check" type="checkbox" name="fp-issue9" value="military"> Military Spending<br/>
+						<input id="ref-check" type="checkbox" name="fp-issue10" value="refugees"> Refugees<br/>
+											<input id="ip-check" type="checkbox" name="fp-issue11" value="ip"> Israel / Palestine<br/>
+						<input id="china-check" type="checkbox" name="fp-issue12" value="china"> China<br/>					
+										</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+						<div><label id="comments-label" for="comments">Comments On Foreign Policy:</label>
+						<textarea name="comments" placeholder="Additional Comments?"></textarea></div>
+							
+						
+						
+						</div>
+						</div>
+    			</div>
+						
+						<!-- Flex Box 4 -->
+  				<div id="flex-box-4" class="flex-box">
+    				<!--<div class="flex-item formsection">-->
+						<input id="submit" class="flex-item formsection" type="submit" ></input>
+                        <a href="{{url_for('login')}}"> <h1>SIGIN FOR MORE SURVEYS</h1></a>
+						<!--</div>-->
+								<img class="flex-item image" src="http://www.mabonline.net/wp-content/uploads/2015/01/Dollarphotoclub_70130934.jpg">
+  				</div>
+						
+						
+					</form>
+				</div>
+			</section>
+				
+			</div>
+		</main>
+			
+		<!-- Begin Footer - All Display Content -->		
+		<footer class=""> <!-- This is just for visial placement, comment out or remove --> <!--Footer-->
+			
+			<!-- Footer Container -->
+			<div class="footer-container-full">
+				<!--Footer Container Text-->
+				<p id="footer" class="text-right">Quick website for online surveys <a href="#" target="_blank"></a></p>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>

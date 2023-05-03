@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Schibsted+Grotesk:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}"/>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+        {% for message in messages %}
+      <center><b>{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>
+   <div class="container">
+    <form method='POST'>
+        <p>Signin Here</p>
+        <input type="number" name="faculty" placeholder="User id" id="" required><br>
+        <input type="password" name="password" placeholder="Password" id="" required><br>
+        <button class="btnstyle">Signin</button></a><br>
+        <a href="{{url_for('forget')}}">Forget Password?</a><br>
+        <a href="{{url_for('register')}}">Don't have an account? Signup</a>
+    </form>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE SURVEY PLATFORM</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="banner">
+        
+       <a href="index.html"> <img src="{{url_for('static',filename='images/avatar.jpg.png')}}" class="logo" alt="Survey" ></a>
+
+        <div class="navbar">
+          
+            <i class="fa-solid fa"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About us</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa"></i>
+        <div class="content">
+            <h1>Do More Than Just Surveys!</h1>
+            <P>SIGN-IN FOR SURVEYS</P>
+            <div>
+               <a href="{{url_for('login')}}"><button type="button">Login</button></a>
+               <a href="{{url_for('register')}}"> <button type="button"><span></span>Signup</button></a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="About" >
+    <section class="Aboutus">
+        <h1>We're all about results</h1>
+        <p>   </p>
+        <div class="row">
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-handshake-simple" style="font-size: 60px;"></i>
+                <h3>Do the right thing</h3>
+                <p> We always aim to perform the best
+                    & not because anyone is watching.
+                    We thrive to do what’s right for the
+                    customer and the company. </p>
+            </div>
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-hand-holding-droplet" style="font-size: 60px;"></i>
+                <h3>Make it work, make it better.</h3>
+                <p> We think big, act with urgency
+                    and do brilliant together. We’re
+                    the go-getters and the
+                    risk-takers. </p>
+            </div>
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-hand-holding-dollar" style="font-size: 60px;"></i>
+                <h3>Accountability</h3>
+                <p> We hold ourselves accountable
+                    and never lose time in blame
+                    gaming. Whatever we
+                    do, we own it. </p>      
+            </div>
+        </div>
+        
+    </section>
+        <div class="row">
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-person" style="font-size: 60px;"></i>
+                <h3>Passion</h3>
+                <p> We inspire each other to find
+                    the passion & let that guide our
+                    actions. We’re driven by
+                    purpose. </p>
+            </div>
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-truck-fast" style="font-size: 60px;"></i>
+                <h3>Deliver wows</h3>
+                <p> We don’t settle for anything but
+                    the best. We’re obsessed with
+                    refining everything we deliver. </p>
+            </div>
+            <div class="Aboutus-col">
+                <i class="fa-solid fa-shield-halved" style="font-size: 60px;"></i>
+                <h3>Solution-driven</h3>
+                <p> We always find a way to get
+                    things done, a solution that can
+                    help, not a thousand more faults. </p>
+            </div>
+        
+        </section>
+</div>
+
+
+<div id="contact">
+<section class="contactus">
+    <h1>Any Queries Contact Us</h1>
+    <div class="row">
+        <div class="left-side">
+        <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Benz Circle</div>
+            <div class="text-two">Vijayawada-520010</div>
+          </div>
+        <div class="phone-details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91 9676288093</div>
+            <div class="text-two">+91 8639362659</div>
+        </div>
+        <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one"></div>
+            <div class="text-two">info.onlinesurvey2023@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+            
+            <p>If you have any  queries related to our site, you can send  message from here. It's our pleasure to help you.</p>
+            <div class="topic-text">Send us a message</div>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              <input type="textarea" placeholder="Enter your Query">
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+        </form>
+
+    </div>
+</section>
+</div>
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</body>
+</html>

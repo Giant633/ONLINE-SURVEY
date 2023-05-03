@@ -1,0 +1,88 @@
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background:blueviolet;
+    
+    }
+    .container{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top:50%;
+        left: 50%;
+    }
+    form{
+        background-image: url('images/bg2.png');
+        height: 360px;
+        width: 240px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 16px -2px black,-10px -10px 16px -2px black;
+        border: 2px solid black;
+        text-align: center;
+        padding: 2em;
+    
+    }
+    p{
+        color: aqua;
+        margin-bottom: 2em;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    input{
+        width: 170px;
+        border: none;
+        border-radius: 5000px;
+        padding: 1em;
+        background: transparent;
+        box-shadow: inset 4px 4px 6px aqua,inset -4px -4px 6px aqua;
+        margin-bottom: 2em;
+        color: black;
+        font-family: 'poppins',sans-serif;
+        font-weight: 400;
+    }
+
+.btnstyle{
+    width: 170px;
+    border: none;
+    border-radius: 5000px;
+    padding: 1em;
+    background: black;
+    box-shadow: inset 4px 4px 6px purple,inset -4px -4px 6px purple;
+    margin-bottom: 2em;
+    color: black;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+
+}
+.btnstyle{
+    width: 100px;
+    box-shadow: 4px 4px 6px transparent,-4px -4px 6px transparent;
+    margin-top: 1em;
+    color: blue;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+}
+.btnstyle:hover{
+    background-color: aqua;
+    color: black;
+}
+    input:hover{
+        cursor: pointer;
+    }
+    input:active{
+        box-shadow: inset 4px 4px 6px #ccc,inset -4px -4px 6px #fff ;
+    }
+    input:focus{
+        outline: none;  
+    }
+    ::-moz-placeholder{
+        font-family: 'poppins',sans-serif;
+        font-weight: 500;
+        color: #aaa;
+    }
+    ::placeholder{
+        font-family: 'poppins',sans-serif;
+        font-weight: 500;
+        color: aqua;
+    }
+   
